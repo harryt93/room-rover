@@ -14,8 +14,8 @@
 <b>High Maintainability</b><br>
 <i>If anything goes wrong, I want to be able to fix it fairly easily.</i><br><br><br>
 
-<b>Stylish</b><br>
-<i>I want to be able to show it off to people at interviews, to friends, and at work. It's got to look reasonable cool for that.</i><br><br><br>
+<b>Exciting</b><br>
+<i>I want to be able to show it off to people at interviews, to friends, and at work. It's got to be reasonably cool for that.</i><br><br><br>
 
 ## Functional Requirements
 ### Sense Environment

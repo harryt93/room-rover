@@ -3,7 +3,7 @@
 ## Scenario 1: Trodden on in the Dark
 
 ### Scenario
-The system is trundling around on the floor in the middle of the night.<br>
+The system is trundling around on the floor in the middle of the night.
 
 ### Derived Requirements:
-The system is trundling around on the floor in the middle of the night.<br>
+The system is trundling around on the floor in the middle of the night.

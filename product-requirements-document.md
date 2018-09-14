@@ -17,6 +17,12 @@
 <b>NFS_06: </b>Exciting<br>
 <i>I want to be able to show it off to people at interviews, to friends, and at work. It's got to be reasonably cool for that.</i><br><br>
 
+<b>NFS_07: </b>Provides Opportunities to Learn<br>
+<i>It's important that this project stretches me and forces me to learn new things.</i><br><br>
+
+<b>NFS_08: </b>High Performance<br>
+<i>The rover should perform satisfactorily, at a reasonable speed, and generate good quality maps.</i><br><br>
+
 ## Functional Requirements
 ### Sense Environment
 ### Traverse Environment

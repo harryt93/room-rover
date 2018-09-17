@@ -27,3 +27,23 @@ The rover is currently stopped and in hibernation mode under a desk. The user co
 The system shall have a low power standby mode where it monitors for user commands to start.<br>
 <i>Turning the rover on should be as easy as commanding it to start exploring. It should be waiting, ready to start exploring as soon as the user requests it to. </i>
 
+## Scenario 4: Trapped in a Room
+
+### Scenario
+The rover is exploring a room. The door is shut, trapping the rover in the room. It continues to explore the room, and simply updates the map to show the door is closed. It doesn't specifically recognise that it is trapped.
+
+## Scenario 5: Stuck
+
+### Scenario
+The rover is exploring a room, and travels over a pile of clothes on the floor. It tips up slightly and it's wheels no longer touch the floor, and it gets stuck. It recognises that it's spinning it's wheels, but that there is no change in location, so it assumes it is stuck. It attempts to escape by reversing and moving forward a few times, but it doesn't escape. It stops, and signals that it is stuck.
+
+### Derived Requirements:
+The system shall detect when it gets stuck.<br>
+<i>The system should recognise when it gets stuck so that it can make some attempt to get loose.</i><br><br>
+  
+The system shall attempt to free itself when stuck.<br>
+<i>The system should attempt to free itself so that it can continue to explore the room autonomously. </i><br><br>
+
+The system shall signal if it is truly stuck.<br>
+<i>If the system is truly stuck and can't escape, it should let the user know so that it can be freed.</i><br><br>
+  

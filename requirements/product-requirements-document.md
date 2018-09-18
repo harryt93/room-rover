@@ -29,6 +29,12 @@
 <b>NFP:</b> The rover should be able to map a room with floor space 5m^2 by 5m^2 in one hour.<br>
 <i>Since the rover is autonomous, it's not essential that it map quickly. As long as it doesn't take forever.</i><br><br>
 
+<b>NFP:</b> The rover should be able to traverse a pile of clothes 0.25 m high.<br>
+<i>There may be clothes on the floor that it doesn't map, and I don't want these to be an obstacle to the rover.</i><br><br>
+
+<b>NFP:</b> The rover should be able to turn on the spot.<br>
+<i>In order to map the floor effectively, the rover needs good agility.</i><br><br>
+
 ### Map Environment
 <b>NFI:</b> The rover shall send it's internal map to a PC for visualisation.<br>
 <i>I want to be able to see the map that it produces. The actual software to visualise the map needs to be written too, but that's a separate project.</i><br><br>
@@ -39,6 +45,9 @@
 ### Manage Rover
 <b>NFP:</b> The rover shall not operate in darkness.<br>
 <i>I don't want the rover to operate at night because of the noise of it being in the room. Also, there is a danger of standing on it in the dark.</i><br><br>
+
+<b>NFP:</b> The rover shall be able to operate for at least 1 hour on a single charge.<br>
+<i>If I want to demonstrate it, I want the rover to keep going to at least an hour without having to recharge.</i><br><br>
 
 <b>NFI:</b> The system shall have a low power standby mode where it monitors for user commands to start.<br>
 <i>Turning the rover on should be as easy as commanding it to start exploring. It should be waiting, ready to start exploring as soon as the user requests it to.</i><br><br>

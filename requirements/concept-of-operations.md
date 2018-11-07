@@ -65,3 +65,4 @@ The system shall transmit data when it detects a suitable connection.
 
 The system shall transmit it's internal map to a computer.
 <i>The system itself does not need to display the map, but it must communicate it to a computer on the network.</i>
+

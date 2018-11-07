@@ -9,13 +9,13 @@ The rover is exploring a room autonomously. There is a large box in the way of i
 The system shall dectect and navigate around obstacles in it's path.<br>
 <i>The Rover should automatically detect obstacles in it's path, and navigate around them.</i><br>
 
-The system shall mark temporary obstacles on the map.<br>
-<i>It would be nice for the system to know what is permanently part of the environment, and what is only temporarily so. It should identify when it finds a temporary object like a box on the floor.</i>
+The system shall mark temporary obstacles on it's map.<br>
+<i>It would be nice for the system to communicate what is permanently part of the environment, and what is only temporarily so. It should identify when it finds a temporary object like a box on the floor.</i>
 
 ## Scenario 2: Trodden on in the Dark
 
 ### Scenario
-The rover is trundling around on the floor in the middle of the night. Person gets out of bed, and stands on the rover, breaking it.
+The rover is moving around on the floor in the middle of the night. A person moving around in the darkness stands on the rover, breaking it.
 
 ### Derived Requirements:
 The system shall not operate in darkness.<br>
@@ -30,24 +30,19 @@ The rover begins in a shutdown state. The user activates the rover. The rover tu
 The Rover shall perform a start up check to confirm that it's functioning properly.
 <i>Performing a start up check will allow the Rover to catch problems before it begins to move.</i>
 
-# Scenario 4: Failed Start
+## Scenario 4: Failed Start
 
 ### Scenario
-The rover begins in a shutdown state. The user activates the rover. The rover turns on, does a system check, and detects a low battery. It communicates a failed start status to the user and then shuts down.
+The rover begins in a shutdown state. The user activates the rover. The rover turns on, does a system check, and detects a low battery. It communicates a failed start status to the user and then awaits shutdown.
 
 ### Derived Requirements:
 The Rover shall communicate a failed start status to the user if a system check detects a problem.
 <i>The Rover should alert the user to any problems it finds.</i>
 
-## Scenario 5: Trapped in a Room
-
-### Scenario
-The rover is exploring a room. The door is shut, trapping the rover in the room. It continues to explore the room, and simply updates the map to show the door is closed. It doesn't specifically recognise that it is trapped.
-
 ## Scenario 5: Stuck
 
 ### Scenario
-The rover is exploring a room, and travels over a pile of clothes on the floor. It tips up slightly and it's wheels no longer touch the floor, and it gets stuck. It recognises that it's spinning it's wheels, but that there is no change in location, so it assumes it is stuck. It attempts to escape by reversing and moving forward a few times, but it doesn't escape. It stops, and signals that it is stuck.
+The rover is exploring a room autonomously, and travels over a pile of clothes on the floor. It tips up slightly and it's wheels no longer touch the floor, and it gets stuck. It recognises that it's spinning it's wheels, but that there is no change in location, so it assumes it is stuck. It attempts to escape by reversing and moving forward a few times, but it doesn't escape. It stops, signals that it is stuck, and awaits shutdown.
 
 ### Derived Requirements:
 The system shall detect when it gets stuck.<br>
@@ -58,4 +53,15 @@ The system shall attempt to free itself when stuck.<br>
 
 The system shall signal if it is truly stuck.<br>
 <i>If the system is truly stuck and can't escape, it should let the user know so that it can be freed.</i><br><br>
-  
+
+## Scenario 6: Communicating the Map
+
+### Scenario
+The Rover is exploring a room autonomously, at regular intervals when it detects a connection, it connects to a computer and transmits it's representation of the internal map.
+
+### Derived Requirements:
+The system shall transmit data when it detects a suitable connection.
+<i>The system should automatically pick up a connection and send it's map data over that connection if it's strong enough.</i><br>
+
+The system shall transmit it's internal map to a computer.
+<i>The system itself does not need to display the map, but it must communicate it to a computer on the network.</i>

@@ -3,10 +3,13 @@
 ## Scenario 1: Box in the Way
 
 ### Scenario
-The rover is exploring the room. There is a large box in the way, right in the middle of the floor. As the rover approaches the box, it detects it, and moves around it. The box is reflected in the map that the rover creates.
+The rover is exploring a room autonomously. There is a large box in the way of it's path, right in the middle of the floor. As the rover approaches the box, it detects it, and moves around it. The box is reflected in the map that the rover creates as a temporary obstacle.
 
 ### Derived Requirements:
-The system shall mark what it thinks are temporary obstacles on the map.<br>
+The system shall dectect and navigate around obstacles in it's path.<br>
+<i>The Rover should automatically detect obstacles in it's path, and navigate around them.</i><br>
+
+The system shall mark temporary obstacles on the map.<br>
 <i>It would be nice for the system to know what is permanently part of the environment, and what is only temporarily so. It should identify when it finds a temporary object like a box on the floor.</i>
 
 ## Scenario 2: Trodden on in the Dark
@@ -21,13 +24,22 @@ The system shall not operate in darkness.<br>
 ## Scenario 3: Starting System Operation
 
 ### Scenario
-The rover is currently stopped and in hibernation mode under a desk. The user comes into the room, bends down, and pushes a button on top of the rover. The rover turns on and immediately begins to explore the room.
+The rover begins in a shutdown state. The user activates the rover. The rover turns on, does a system check, confirms that all it's systems are functioning, and begins to explore the room.
 
 ### Derived Requirements:
-The system shall have a low power standby mode where it monitors for user commands to start.<br>
-<i>Turning the rover on should be as easy as commanding it to start exploring. It should be waiting, ready to start exploring as soon as the user requests it to. </i>
+The Rover shall perform a start up check to confirm that it's functioning properly.
+<i>Performing a start up check will allow the Rover to catch problems before it begins to move.</i>
 
-## Scenario 4: Trapped in a Room
+# Scenario 4: Failed Start
+
+### Scenario
+The rover begins in a shutdown state. The user activates the rover. The rover turns on, does a system check, and detects a low battery. It communicates a failed start status to the user and then shuts down.
+
+### Derived Requirements:
+The Rover shall communicate a failed start status to the user if a system check detects a problem.
+<i>The Rover should alert the user to any problems it finds.</i>
+
+## Scenario 5: Trapped in a Room
 
 ### Scenario
 The rover is exploring a room. The door is shut, trapping the rover in the room. It continues to explore the room, and simply updates the map to show the door is closed. It doesn't specifically recognise that it is trapped.

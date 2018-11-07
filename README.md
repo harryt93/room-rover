@@ -3,14 +3,14 @@ Project where I build a robot to autonomously map indoor spaces, whilst intellig
 
 ### Design Iteration 1 Progress
 
-CONOPS: Incomplete.
-REQUIREMENTS: Inconsistent and Incomplete.
-AHP: Inconsistent and Incomplete.
-FUNCTIONAL ARCHITECTURE: Inconsistent and Incomplete.
-LOGICAL ARCHITECTURE: Inconsistent and Incomplete.
-PHYSICAL ARCHITECTURE: Inconsistent and Incomplete.
-GEOMETRY: Inconsistent and Incomplete.
-WIRING DIAGRAM: Inconsistent and Incomplete.
-BILL OF MATERIALS: Inconsistent and Incomplete.
-INTERFACES DOCUMENT: Inconsistent and Incomplete.
-DESIGN REPORT: Inconsistent and Incomplete.
+CONOPS: Incomplete. <br>
+REQUIREMENTS: Inconsistent and Incomplete.<br>
+AHP: Inconsistent and Incomplete.<br>
+FUNCTIONAL ARCHITECTURE: Inconsistent and Incomplete.<br>
+LOGICAL ARCHITECTURE: Inconsistent and Incomplete.<br>
+PHYSICAL ARCHITECTURE: Inconsistent and Incomplete.<br>
+GEOMETRY: Inconsistent and Incomplete.<br>
+WIRING DIAGRAM: Inconsistent and Incomplete.<br>
+BILL OF MATERIALS: Inconsistent and Incomplete.<br>
+INTERFACES DOCUMENT: Inconsistent and Incomplete.<br>
+DESIGN REPORT: Inconsistent and Incomplete.<br>

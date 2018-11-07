@@ -6,7 +6,7 @@
 The rover is exploring a room autonomously. There is a large box in the way of it's path, right in the middle of the floor. As the rover approaches the box, it detects it, and moves around it. The box is reflected in the map that the rover creates as a temporary obstacle.
 
 ### Derived Requirements:
-The system shall dectect and navigate around obstacles in it's path.<br>
+The system shall detect and navigate around obstacles in it's path.<br>
 <i>The Rover should automatically detect obstacles in it's path, and navigate around them.</i><br>
 
 The system shall mark temporary obstacles on it's map.<br>

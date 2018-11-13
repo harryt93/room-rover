@@ -4,7 +4,7 @@ Project where I build a robot to autonomously map indoor spaces, whilst intellig
 ### Design Iteration 1 Progress
 
 <b>CONOPS:</b> Sufficient to proceed. <br>
-<b>REQUIREMENTS:</b> Inconsistent and Incomplete.<br>
+<b>REQUIREMENTS:</b> Sufficient to proceed. <br>
 <b>AHP:</b> Inconsistent and Incomplete.<br>
 <b>FUNCTIONAL ARCHITECTURE:</b> Inconsistent and Incomplete.<br>
 <b>LOGICAL ARCHITECTURE:</b> Inconsistent and Incomplete.<br>
